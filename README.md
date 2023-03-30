@@ -12,9 +12,11 @@ This session is for Data Exploration using MySQL workbench. We a considering a s
 -	Year by Supplier Sales
 
 ## Data Schema 
+
 ![](Picture3.png)
 
 ### Tables, Columns and Data types 
+
 ![](Table_char.jpg)
 
 ## Data exploration
