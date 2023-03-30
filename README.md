@@ -2,6 +2,7 @@
 
 ## Introduction 
 This session is for Data Exploration using MySQL workbench. We a considering a schema called Chillydata.
+###### **_Disclaimer_**: All dataset and reporrt does not repreent any company, institution or country, just a dumy dataset. 
 
 ## Problem statement 
 -	Year / Month Sales Trends Visualization		
@@ -17,7 +18,7 @@ This session is for Data Exploration using MySQL workbench. We a considering a s
 ![](Table_char.jpg)
 
 ## Data exploration
-Observing the questions to be solve above it will be good to create a temporary table that contains all information needed to answer those questions just in a table. Values likely to be needed are the Order_date,Region, product_name, Sales_rep name, Sales(Price * Unit), Profit (price – cost).
+Observing the questions to be solve above, it will be good to create a temporary table that contains all information needed to answer those questions just in a table. Values likely to be needed are the Sales_date,Region, product_name, Sales_rep name, Sales(Price * Unit), Profit (price – cost).
 #### Syntax:
 ![](Temptable.jpg)
 
@@ -26,14 +27,15 @@ Observing the questions to be solve above it will be good to create a temporary 
 
 ## Task 1: Year / Month Sales Trends Visualization
 
-**Syntax**                          |        **Result:**
+**Syntax**                          |        **Result**
 :----------------------------------:|:-------------------------------:                              
 ![](task1.jpg)                      |      ![](Rtask1.jpg)
 
-The above generate the above query generates the table used to create a visual chart using tools such as Tableau, excel… for visualization.
+The above query generates the table used to create a visual chart using tools such as Tableau, excel… for visualization.
 
 ### Visual 
 ![](V_montlytrend.jpg)
+There as been a trend of increment in sales in Auqust, November and partly December and a decline in the first quater. 
 
 ## Task 2: Region Sales Totals by Year and % Change
 
@@ -69,14 +71,23 @@ Eraser with product_id ‘2’ is the most sold product
 
 #### Visual 
 ![](V_salesrep.jpg)
+Chally with Salesrep_id '2' seams to be the leading sales_rep while salesrep with id '3' as an extreemly low sales and need to improve greatly.
+For a better insight, we need to be sure that location (region) does not have an influence on sales rep performance. 
 
-Chally seams to be the leading sales_rep
+**Syntax**                          |        **Result**
+:----------------------------------:|:-------------------------------:                              
+![](tas6.jpg)                       |      ![](rtes6.jpg)
 
-## Sales summary 
+From the result above sales rep region does not have an influence on their performance, as we could see that the first two leading sales Rep are from a different region. 
+
+## Sales Summary 
 **Syntax**                          |        **Result**
 :----------------------------------:|:-------------------------------:                              
 ![](sum.jpg)                        |      ![](rsum.jpg)
 
 Total sales **_$199,770.00_**, Total profit **_$103,506.00_**, No_of_Transaction **_91_**. 
 
-## Conclusion and recommendation  
+## Conclusion and Recommendation 
+Across All years the company made profits but the profit made are not consistent. Also some Sale Rep are not very effective likewise item with product_id '3' has a very low sales. 
+
+Sales Rep should be Trained or changed and their location swap should be considered. 
