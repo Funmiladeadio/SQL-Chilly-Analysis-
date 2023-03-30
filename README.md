@@ -11,7 +11,7 @@ This session is for Data Exploration using MySQL workbench. We a considering a s
 -	Year by Supplier Sales
 
 ## Data Schema 
-![](picture3.png)
+![](Picture3.png)
 
 ### Tables, Columns and Data types 
 ![](Table_char.jpg)
@@ -21,31 +21,62 @@ Observing the questions to be solve above it will be good to create a temporary 
 #### Syntax:
 ![](Temptable.jpg)
 
-#### Table View 
+#### Temporary table (SALES_TABLE) View 
 ![](rtemptable.jpg)
 
-### Task 1: Year / Month Sales Trends Visualization
-**Syntax:**
-![](task1.jpg)
-Result:
-![](Rtask1.jpg)
+## Task 1: Year / Month Sales Trends Visualization
+
+**Syntax**                          |        **Result:**
+:----------------------------------:|:-------------------------------:                              
+![](task1.jpg)                      |      ![](Rtask1.jpg)
 
 The above generate the above query generates the table used to create a visual chart using tools such as Tableau, excel… for visualization.
-### Visual 
-!{](V_montlytrend.jpg)
 
-Task 2: Region Sales Totals by Year and % Change
+### Visual 
+![](V_montlytrend.jpg)
+
+## Task 2: Region Sales Totals by Year and % Change
+
+**Syntax**                                                           
+![](task2.jpg) 
+
+**Result**
+
+![](rtask2.jpg)
+
 Obvious that the sales growth from each region isn’t consistent. For CA region there was an increase in the first two years (2021 & 2022) but a decrease of -6.75% to the previous year in 2023 and for WA there was a decrease of -58.12% in the year 2022 and a pick-up increase in 2023 but revenue wasn’t up to that of 2021.
 
-Task 3:  Average Month Sales by Product	
-Above snapshot shows the syntax that result Average sales by product and will be better interpreted using visualization tools. 
+## Task 3:  Average Month Sales by Product	
+**Syntax**                          |        **Result**
+:----------------------------------:|:-------------------------------:                              
+![](Task31.jpg)                     |      ![](Rtask31.jpg)
 
-Task 4:  products with the highest profit 
+Above snapshot shows the syntax that result Average sales by product and will be better interpreted using visual tools. 
+                              
+![](v_salesproduct.jpg)
+
+## Task 4:  products with the highest profit 
+**Syntax**                          |        **Result**
+:----------------------------------:|:-------------------------------:                              
+![](task4.jpg)                      |      ![](rtask4.jpg)
+
 Eraser with product_id ‘2’ is the most sold product
  
-Task 5:  Year by Supplier Sales
+## Task 5:  Year by Supplier Sales
+**Syntax**                          |        **Result**
+:----------------------------------:|:-------------------------------:                              
+![](task5.jpg)                      |      ![](rtask5.jpg)
+
+#### Visual 
+![](V_salesrep.jpg)
+
 Chally seams to be the leading sales_rep
 
-Sales summary 
-Total sales, Total profit, No_of_Transaction. 
-Conclusion and recommendation  
+## Sales summary 
+**Syntax**                          |        **Result**
+:----------------------------------:|:-------------------------------:                              
+![](sum.jpg)                        |      ![](rsum.jpg)
+
+Total sales **_$199,770.00_**, Total profit **_$103,506.00_**, No_of_Transaction **_91_**. 
+
+## Conclusion and recommendation  
